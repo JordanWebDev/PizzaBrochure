@@ -1,0 +1,124 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: "Arial", Arial, sans-serif;
+    margin: 0%;
+}
+header{
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    padding-top: 1px;
+    background: black;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+#header-text {
+    color: white;
+    float: left;
+    padding-left: 2%;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        color: darkorange;
+    }
+}
+#logopizza{
+    max-width: 100px;
+    max-height: 100px;
+}
+#webnav {
+    font-style: normal;
+    overflow: hidden;
+    left: 50%;
+
+    ul {
+        margin: 0 auto;
+        font-size: 140%;
+
+        li {
+            list-style-type: none;
+            padding: 20px;
+            float: right;
+
+            a {
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    color:darkorange;
+                }
+            }
+        }
+    }
+}
+#mobileNav{
+    display: none;
+}
+#img-home{
+    padding-top: 83px;
+}
+#home-title {
+    text-align: center;
+}
+#videotext{
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+#videotext1{
+    font-size: 21px;
+    text-align: left;
+    font-weight: bold;
+    padding: 20px;
+}
+#slider{
+    height: 100%;
+    background-color: black;
+}
+//* slider properties *//
+.carousel-item{
+    width: 100%;
+    height: 500px;
+    transition: transform .1s ease,-webkit-transform .1s ease;
+}
+
+.submit-button{
+    background-color: red;
+    border-color: darkred;
+
+    &:hover{
+        background-color: black;
+    }
+}
+footer{
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 15px;
+    border-top: 5px solid black;
+}
+#gmaps{
+    padding: 0px;
+    right: 0;
+}
+@media only screen and (max-width: 760px) {
+    #header-text{
+        display: show;
+        font-size: 30px;
+    }
+    #webnav{
+        display: none;
+    }
+    #navbutton{
+        display: show;
+    }
+}
+@media only screen and (max-width: 370px) {
+
+}
